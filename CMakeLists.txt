@@ -17,12 +17,20 @@ set(VCPKG_MANIFEST_MODE ON)
 find_package(glfw3 CONFIG REQUIRED)
 find_package(fmt CONFIG REQUIRED)
 find_package(glad CONFIG REQUIRED)
+find_package(glm CONFIG REQUIRED)
 
 add_executable (MedievalRPG "main.cpp")
 
 target_link_libraries(MedievalRPG PRIVATE fmt::fmt)
 target_link_libraries(MedievalRPG PRIVATE glfw)     
 target_link_libraries(MedievalRPG PRIVATE glad::glad)
+target_link_libraries(MedievalRPG PRIVATE glm::glm)
+
+add_custom_command(TARGET MedievalRPG POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+    ${CMAKE_SOURCE_DIR}/shaders
+    $<TARGET_FILE_DIR:MedievalRPG>/shaders
+)
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET MedievalRPG PROPERTY CXX_STANDARD 20)

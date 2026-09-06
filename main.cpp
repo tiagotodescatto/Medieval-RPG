@@ -7,6 +7,9 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
+unsigned int width = 1280.0f;
+unsigned int height = 720.0f;
+
 void framebuffer_size_callback(GLFWwindow* window, unsigned int width, unsigned int height) {
 	if (width == 0 || height == 0) return;
 	glViewport(0, 0, width, height);
@@ -61,6 +64,46 @@ unsigned int indices[] = {
     3, 2, 6,   6, 7, 3,   // superior
 };
 
+float yaw = -90.0f;
+float pitch = 0.0f;
+float lastX = width / 2.0f;
+float lastY = height / 2.0f;
+bool firstMouse = true;
+glm::vec3 cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
+
+void mouse_callback(GLFWwindow* window, double xposIn, double yposIn){
+    glm::vec3 direction;
+    direction.x = cos(glm::radians(yaw)) * cos(glm::radians(pitch));
+    direction.y = sin(glm::radians(pitch));
+    direction.z = sin(glm::radians(yaw)) * cos(glm::radians(pitch));
+    cameraFront = glm::normalize(direction);
+
+    float xpos = static_cast<float>(xposIn);
+    float ypos = static_cast<float>(yposIn);
+
+    if (firstMouse) {
+        lastX = xpos;
+        lastY = ypos;
+        firstMouse = false;
+    }
+
+    float xoffset = xpos - lastX;
+    float yoffset = lastY - ypos;
+
+    lastX = xpos;
+    lastY = ypos;
+
+    float sensibility = 0.1f;
+    xoffset *= sensibility;
+    yoffset *= sensibility;
+
+    yaw += xoffset;
+    pitch += yoffset;
+
+    if (pitch > 89.0f) pitch = 89.0f;
+    if (pitch < -89.0f) pitch = -89.0f;
+}
+
 int main(){
 	if (!glfwInit()) {
 		std::cerr << "Failed to initialize GLFW" << std::endl;
@@ -71,7 +114,7 @@ int main(){
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-	GLFWwindow* window = glfwCreateWindow(1280, 720, "Medieval RPG", nullptr, nullptr);
+	GLFWwindow* window = glfwCreateWindow(width, height, "Medieval RPG", nullptr, nullptr);
 	glfwMakeContextCurrent(window);
 	if (!window) {
 		std::cerr << "Failed to initialize window" << std::endl;
@@ -84,6 +127,8 @@ int main(){
 	}
 
     glEnable(GL_DEPTH_TEST);
+    glfwSetCursorPosCallback(window, mouse_callback);
+    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 
     GLuint vao, vbo, ebo;
     glGenVertexArrays(1, &vao);
@@ -106,6 +151,7 @@ int main(){
     glm::vec3 cameraPos = glm::vec3(0.0f, 0.0f, 3.0f);
     float deltaTime = 0.0f;
     float lastFrame = 0.0f;
+    float rotationAngle = 0.0f;
 
 	Input input(window);
 
@@ -114,21 +160,25 @@ int main(){
         deltaTime = currentFrame - lastFrame;
         lastFrame = currentFrame;
 
-		input.windowInput(window, cameraPos, deltaTime);
+        rotationAngle += 60.0f * deltaTime;
+
+		input.windowInput(window, cameraPos, cameraFront, deltaTime);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 		glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 
 		shader.use();
 
         glm::mat4 model = glm::mat4(1.0f); // cube on the origin of the scene
+        model = glm::rotate(model, glm::radians(rotationAngle), glm::vec3(0.0f, 1.0f, 0.0f));
+
         glm::mat4 view = glm::lookAt(
             cameraPos,
-            cameraPos + glm::vec3(0, 0, -1),
+            cameraPos + cameraFront,
             glm::vec3(0.0f, 1.0f, 0.0f)
         );
         glm::mat4 projection = glm::perspective(
             glm::radians(60.0f), // FOV
-            1280.0f / 720.0f, // Aspect Ratio
+            16.0f / 9.0f, // Aspect Ratio
             0.1f, // Min render distance
             1000.0f // Max render distance
         );
@@ -140,7 +190,7 @@ int main(){
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
         glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
         glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
-
+        
         glBindVertexArray(vao);
         glDrawElements(GL_TRIANGLES, 36, GL_UNSIGNED_INT, nullptr);
 

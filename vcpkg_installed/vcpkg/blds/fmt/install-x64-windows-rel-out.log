@@ -1,0 +1,34 @@
+Change Dir: 'C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/blds/fmt/x64-windows-rel'
+
+Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/18/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe" -v -v -j17 install
+[1/6] C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1451~1.362\bin\Hostx64\x64\cl.exe   /TP -DFMT_SHARED -IC:\Users\Chron\source\repos\Medieval-RPG\vcpkg_installed\vcpkg\blds\fmt\src\12.2.0-d352ede310.clean\include /nologo /DWIN32 /D_WINDOWS /utf-8 /GR /EHsc /MP  /MD /O2 /Oi /Gy /DNDEBUG /Z7  -MD /Zc:preprocessor /utf-8 /showIncludes /FoCMakeFiles\fmt-c.dir\src\fmt-c.cc.obj /FdCMakeFiles\fmt-c.dir\fmt-c.pdb /FS -c C:\Users\Chron\source\repos\Medieval-RPG\vcpkg_installed\vcpkg\blds\fmt\src\12.2.0-d352ede310.clean\src\fmt-c.cc
+[2/6] C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1451~1.362\bin\Hostx64\x64\cl.exe   /TP -DFMT_LIB_EXPORT -Dfmt_EXPORTS -IC:\Users\Chron\source\repos\Medieval-RPG\vcpkg_installed\vcpkg\blds\fmt\src\12.2.0-d352ede310.clean\include /nologo /DWIN32 /D_WINDOWS /utf-8 /GR /EHsc /MP  /MD /O2 /Oi /Gy /DNDEBUG /Z7  -MD /utf-8 /showIncludes /FoCMakeFiles\fmt.dir\src\os.cc.obj /FdCMakeFiles\fmt.dir\ /FS -c C:\Users\Chron\source\repos\Medieval-RPG\vcpkg_installed\vcpkg\blds\fmt\src\12.2.0-d352ede310.clean\src\os.cc
+[3/6] C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1451~1.362\bin\Hostx64\x64\cl.exe   /TP -DFMT_LIB_EXPORT -Dfmt_EXPORTS -IC:\Users\Chron\source\repos\Medieval-RPG\vcpkg_installed\vcpkg\blds\fmt\src\12.2.0-d352ede310.clean\include /nologo /DWIN32 /D_WINDOWS /utf-8 /GR /EHsc /MP  /MD /O2 /Oi /Gy /DNDEBUG /Z7  -MD /utf-8 /showIncludes /FoCMakeFiles\fmt.dir\src\format.cc.obj /FdCMakeFiles\fmt.dir\ /FS -c C:\Users\Chron\source\repos\Medieval-RPG\vcpkg_installed\vcpkg\blds\fmt\src\12.2.0-d352ede310.clean\src\format.cc
+[4/6] C:\WINDOWS\system32\cmd.exe /C "cd . && C:\Users\Chron\AppData\Local\vcpkg\downloads\tools\cmake-4.3.2-windows\cmake-4.3.2-windows-x86_64\bin\cmake.exe -E vs_link_dll --msvc-ver=1951 --intdir=CMakeFiles\fmt.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100261~1.0\x64\mt.exe --manifests  -- C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1451~1.362\bin\Hostx64\x64\link.exe  CMakeFiles\fmt.dir\src\format.cc.obj CMakeFiles\fmt.dir\src\os.cc.obj  /out:bin\fmt.dll /implib:fmt.lib /pdb:bin\fmt.pdb /dll /version:12.2 /machine:x64 /nologo /DEBUG /INCREMENTAL:NO /OPT:REF /OPT:ICF  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+[5/6] C:\WINDOWS\system32\cmd.exe /C "cd . && C:\PROGRA~1\MICROS~2\18\COMMUN~1\VC\Tools\MSVC\1451~1.362\bin\Hostx64\x64\lib.exe  /machine:x64 /nologo /out:fmt-c.lib CMakeFiles\fmt-c.dir\src\fmt-c.cc.obj && cd ."
+[5/6] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Chron\source\repos\Medieval-RPG\vcpkg_installed\vcpkg\blds\fmt\x64-windows-rel && C:\Users\Chron\AppData\Local\vcpkg\downloads\tools\cmake-4.3.2-windows\cmake-4.3.2-windows-x86_64\bin\cmake.exe -P cmake_install.cmake"
+-- Install configuration: "Release"
+-- Installing: C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/lib/fmt.lib
+-- Installing: C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/bin/fmt.dll
+-- Installing: C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/include/fmt/args.h
+-- Installing: C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/include/fmt/base.h
+-- Installing: C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/include/fmt/chrono.h
+-- Installing: C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/include/fmt/color.h
+-- Installing: C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/include/fmt/compile.h
+-- Installing: C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/include/fmt/core.h
+-- Installing: C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/include/fmt/format.h
+-- Installing: C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/include/fmt/format-inl.h
+-- Installing: C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/include/fmt/os.h
+-- Installing: C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/include/fmt/ostream.h
+-- Installing: C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/include/fmt/printf.h
+-- Installing: C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/include/fmt/ranges.h
+-- Installing: C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/include/fmt/std.h
+-- Installing: C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/include/fmt/xchar.h
+-- Installing: C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/lib/fmt-c.lib
+-- Installing: C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/include/fmt/fmt-c.h
+-- Installing: C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/share/fmt/fmt-config.cmake
+-- Installing: C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/share/fmt/fmt-config-version.cmake
+-- Installing: C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/share/fmt/fmt-targets.cmake
+-- Installing: C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/share/fmt/fmt-targets-release.cmake
+-- Installing: C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/pkgs/fmt_x64-windows/lib/pkgconfig/fmt.pc
+

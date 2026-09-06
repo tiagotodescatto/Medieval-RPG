@@ -1,0 +1,67 @@
+Package: vcpkg-cmake-config
+Version: 2026-07-21
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 9860d21c43440b9fe07808c94b5c9d67a186bb009f7b51cc1aad7e9660dfc77d
+Status: install ok installed
+
+Package: vcpkg-cmake
+Version: 2025-08-07
+Architecture: x64-windows
+Multi-Arch: same
+Abi: a04464fe4c0fb0020464222402478b87a0fbe259e829ac412a5c9aaae37834b5
+Status: install ok installed
+
+Package: egl-registry
+Version: 2025-05-27
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 741821811b4d1796efe09fea3adf73617b2f211d9e441df31651d39d9be19aef
+Description: EGL API and Extension Registry
+Status: install ok installed
+
+Package: opengl-registry
+Version: 2026-08-03
+Depends: egl-registry
+Architecture: x64-windows
+Multi-Arch: same
+Abi: aa1e697057297df7e7fa296235b75b094f6c4f418f5c958d220fba3611103e14
+Description: OpenGL, OpenGL ES, and OpenGL ES-SC API and Extension Registry
+Status: install ok installed
+
+Package: glad
+Version: 0.1.36
+Depends: egl-registry, opengl-registry, vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: f8dbd348e31e1a2e4ada1a2102088d494315c87b9714ff37ee1a04c0221d0374
+Description: Multi-Language Vulkan/GL/GLES/EGL/GLX/WGL Loader-Generator based on the official specs.
+Default-Features: loader
+Status: install ok installed
+
+Package: glad
+Feature: loader
+Architecture: x64-windows
+Multi-Arch: same
+Description: Generate loader logic.
+Status: install ok installed
+
+Package: glfw3
+Version: 3.5.1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 2f117ebc0554462bbda85e50206b2ed9f679f3f7af693337e4cc065bd06d2def
+Description: GLFW is a free, Open Source, multi-platform library for OpenGL, OpenGL ES and Vulkan application development. It provides a simple, platform-independent API for creating windows, contexts and surfaces, reading input, handling events, etc.
+Status: install ok installed
+
+Package: fmt
+Version: 12.2.0
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 31e5e73b756bb4f919ce9dbda3cb888622f5840c6889bc1c421a8056e7f92b9c
+Description: {fmt} is an open-source formatting library providing a fast and safe alternative to C stdio and C++ iostreams.
+Status: install ok installed
+

@@ -1,0 +1,8 @@
+# ninja log v7
+9	1076	8104238624392870	include/glad/glad.h	c17b82f4dfcefe65
+9	1076	8104238624392870	src/glad.c	c17b82f4dfcefe65
+9	1076	8104238624392870	C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/blds/glad/x64-windows-dbg/include/glad/glad.h	c17b82f4dfcefe65
+9	1076	8104238624392870	C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/blds/glad/x64-windows-dbg/src/glad.c	c17b82f4dfcefe65
+1101	1437	8104238625715610	CMakeFiles/glad.dir/src/glad.c.obj	eb6b2a285a4d74fa
+1438	1519	8104238629086507	glad.lib	71b2a995daa28ff4
+1519	1628	8104238629900446	CMakeFiles/install.util	c448235638828db9

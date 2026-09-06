@@ -1,7 +1,8 @@
-﻿# CMakeList.txt : CMake project for Medieval RPG, include source and define
-# project specific logic here.
-#
-cmake_minimum_required (VERSION 3.10)
+﻿cmake_minimum_required (VERSION 3.10)
+
+if(DEFINED ENV{VCPKG_ROOT} AND NOT DEFINED CMAKE_TOOLCHAIN_FILE)
+  set(CMAKE_TOOLCHAIN_FILE "$ENV{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake" CACHE STRING "")
+endif()
 
 # Enable Hot Reload for MSVC compilers if supported.
 if (POLICY CMP0141)
@@ -11,11 +12,18 @@ endif()
 
 project ("Medieval RPG")
 
-# Add source to this project's executable.
-add_executable (CMakeTarget "Medieval RPG.cpp" "Medieval RPG.h")
+set(VCPKG_MANIFEST_MODE ON)
+
+find_package(glfw3 CONFIG REQUIRED)
+find_package(fmt CONFIG REQUIRED)
+find_package(glad CONFIG REQUIRED)
+
+add_executable (MedievalRPG "main.cpp")
+
+target_link_libraries(MedievalRPG PRIVATE fmt::fmt)
+target_link_libraries(MedievalRPG PRIVATE glfw)     
+target_link_libraries(MedievalRPG PRIVATE glad::glad)
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
-  set_property(TARGET CMakeTarget PROPERTY CXX_STANDARD 20)
+  set_property(TARGET MedievalRPG PROPERTY CXX_STANDARD 20)
 endif()
-
-# TODO: Add tests and install targets if needed.

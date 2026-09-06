@@ -1,0 +1,26 @@
+# ninja log v7
+105	536	8104238687749023	src/CMakeFiles/glfw.dir/null_init.c.obj	4e1d774e2bcaa6dd
+124	555	8104238687938831	src/CMakeFiles/glfw.dir/null_window.c.obj	fca25913dafd7449
+68	572	8104238687380760	src/CMakeFiles/glfw.dir/vulkan.c.obj	a123c447c1404a01
+141	585	8104238688105445	src/CMakeFiles/glfw.dir/win32_module.c.obj	c73d334f09fe0270
+48	599	8104238687173383	src/CMakeFiles/glfw.dir/monitor.c.obj	ec49516f2a7dcbfe
+159	637	8104238688283208	src/CMakeFiles/glfw.dir/win32_thread.c.obj	412466001dc8f3f
+26	643	8104238686966497	src/CMakeFiles/glfw.dir/init.c.obj	8de05d5faa3eeeda
+86	649	8104238687554340	src/CMakeFiles/glfw.dir/egl_context.c.obj	4716e0be66a4fb6c
+76	656	8104238687461347	src/CMakeFiles/glfw.dir/window.c.obj	2a5eed93c59242aa
+132	703	8104238688020713	src/CMakeFiles/glfw.dir/null_joystick.c.obj	3d0b0a03ff3560f3
+114	721	8104238687842625	src/CMakeFiles/glfw.dir/null_monitor.c.obj	6bf4f01e10c43814
+58	726	8104238687278122	src/CMakeFiles/glfw.dir/platform.c.obj	f5d6e0c0ad59ffb
+150	731	8104238688200580	src/CMakeFiles/glfw.dir/win32_time.c.obj	37d0e95a300e61ea
+95	736	8104238687650845	src/CMakeFiles/glfw.dir/osmesa_context.c.obj	302a1d0420c5ac6a
+14	741	8104238686845159	src/CMakeFiles/glfw.dir/context.c.obj	d64d84c3872165df
+37	746	8104238687070566	src/CMakeFiles/glfw.dir/input.c.obj	ba642848e509b4cb
+599	758	8104238692687086	src/CMakeFiles/glfw.dir/glfw.rc.res	89699d4aa85c217e
+168	787	8104238688375509	src/CMakeFiles/glfw.dir/win32_init.c.obj	d390975db826ad2b
+539	923	8104238692089174	src/CMakeFiles/glfw.dir/win32_joystick.c.obj	4892d07968749f9e
+572	932	8104238692420890	src/CMakeFiles/glfw.dir/win32_window.c.obj	73ee9f3fa2b0aa8c
+586	937	8104238692560926	src/CMakeFiles/glfw.dir/wgl_context.c.obj	eea6f86686133b68
+556	968	8104238692260863	src/CMakeFiles/glfw.dir/win32_monitor.c.obj	f7f8daee53bc2d98
+969	1341	8104238699728249	src/glfw3.dll	1d29886f874d9eeb
+969	1341	8104238699728249	src/glfw3dll.lib	1d29886f874d9eeb
+1341	1482	8104238700110916	CMakeFiles/install.util	592c54e60c5fca09

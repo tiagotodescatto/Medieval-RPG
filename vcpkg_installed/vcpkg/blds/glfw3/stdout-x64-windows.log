@@ -1,0 +1,16 @@
+Downloading https://github.com/glfw/glfw/archive/3.5.1.tar.gz -> glfw-glfw-3.5.1.tar.gz
+Successfully downloaded glfw-glfw-3.5.1.tar.gz
+-- Extracting source C:/Users/Chron/AppData/Local/vcpkg/downloads/glfw-glfw-3.5.1.tar.gz
+-- Using source at C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/blds/glfw3/src/3.5.1-1256661d11.clean
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Fixing pkgconfig file: C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/pkgs/glfw3_x64-windows/lib/pkgconfig/glfw3.pc
+Downloading msys2-mingw-w64-x86_64-pkgconf-1~2.5.1-1-any.pkg.tar.zst, trying https://mirror.msys2.org/mingw/mingw64/mingw-w64-x86_64-pkgconf-1~2.5.1-1-any.pkg.tar.zst
+Successfully downloaded msys2-mingw-w64-x86_64-pkgconf-1~2.5.1-1-any.pkg.tar.zst
+Downloading msys2-msys2-runtime-3.6.5-1-x86_64.pkg.tar.zst, trying https://mirror.msys2.org/msys/x86_64/msys2-runtime-3.6.5-1-x86_64.pkg.tar.zst
+Successfully downloaded msys2-msys2-runtime-3.6.5-1-x86_64.pkg.tar.zst
+-- Using msys root at C:/Users/Chron/AppData/Local/vcpkg/downloads/tools/msys2/3e71d1f8e22ab23f
+-- Fixing pkgconfig file: C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/pkgs/glfw3_x64-windows/debug/lib/pkgconfig/glfw3.pc
+-- Installing: C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/pkgs/glfw3_x64-windows/share/glfw3/copyright
+-- Performing post-build validation

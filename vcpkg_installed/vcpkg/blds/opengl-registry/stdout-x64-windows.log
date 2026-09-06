@@ -1,0 +1,6 @@
+Downloading https://github.com/KhronosGroup/OpenGL-Registry/archive/e8f7cd0e35ac8d6f5667a021ff83d04b1fec41ef.tar.gz -> KhronosGroup-OpenGL-Registry-e8f7cd0e35ac8d6f5667a021ff83d04b1fec41ef.tar.gz
+Successfully downloaded KhronosGroup-OpenGL-Registry-e8f7cd0e35ac8d6f5667a021ff83d04b1fec41ef.tar.gz
+-- Extracting source C:/Users/Chron/AppData/Local/vcpkg/downloads/KhronosGroup-OpenGL-Registry-e8f7cd0e35ac8d6f5667a021ff83d04b1fec41ef.tar.gz
+-- Using source at C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/blds/opengl-registry/src/4b1fec41ef-a126ad0aa2.clean
+-- Installing: C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/pkgs/opengl-registry_x64-windows/share/opengl-registry/copyright
+-- Performing post-build validation

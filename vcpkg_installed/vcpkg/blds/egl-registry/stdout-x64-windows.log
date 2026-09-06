@@ -1,0 +1,6 @@
+Downloading https://github.com/KhronosGroup/EGL-Registry/archive/3ae2b7c48690d2ce13cc6db3db02dfc0572be65e.tar.gz -> KhronosGroup-EGL-Registry-3ae2b7c48690d2ce13cc6db3db02dfc0572be65e.tar.gz
+Successfully downloaded KhronosGroup-EGL-Registry-3ae2b7c48690d2ce13cc6db3db02dfc0572be65e.tar.gz
+-- Extracting source C:/Users/Chron/AppData/Local/vcpkg/downloads/KhronosGroup-EGL-Registry-3ae2b7c48690d2ce13cc6db3db02dfc0572be65e.tar.gz
+-- Using source at C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/blds/egl-registry/src/c0572be65e-4257a9ad9b.clean
+-- Installing: C:/Users/Chron/source/repos/Medieval-RPG/vcpkg_installed/vcpkg/pkgs/egl-registry_x64-windows/share/egl-registry/copyright
+-- Performing post-build validation

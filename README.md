@@ -229,9 +229,9 @@ The exploration, first-person perspective, environments, combat, and overall fee
 
 ## 👨‍💻 Author
 
-**Tiago**
+**Tiago Todescatto**
 
-A student learning **C++, OpenGL, computer graphics, and game development** by building this project from the ground up.
+A 16 year-old student learning **C++, OpenGL, computer graphics, and game development** by building this project from the ground up.
 
 ---
 

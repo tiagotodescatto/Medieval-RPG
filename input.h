@@ -4,6 +4,8 @@
 #include <GLFW/glfw3.h>
 #include <glm/glm.hpp>
 
+const float gravity = 9.80665;
+
 class Input {
 public:
 	Input(GLFWwindow* window) {};

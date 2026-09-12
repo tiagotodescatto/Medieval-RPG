@@ -5,6 +5,9 @@
 *.userosscache
 *.sln.docstates
 
+*.exr
+assets/NightSkyHDRI007_16K_HDR.exr
+
 # Build
 out/
 build/

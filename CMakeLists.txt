@@ -18,6 +18,7 @@ find_package(glfw3 CONFIG REQUIRED)
 find_package(fmt CONFIG REQUIRED)
 find_package(glad CONFIG REQUIRED)
 find_package(glm CONFIG REQUIRED)
+find_package(tinyexr CONFIG REQUIRED)
 
 add_executable (MedievalRPG "main.cpp")
 
@@ -25,11 +26,18 @@ target_link_libraries(MedievalRPG PRIVATE fmt::fmt)
 target_link_libraries(MedievalRPG PRIVATE glfw)     
 target_link_libraries(MedievalRPG PRIVATE glad::glad)
 target_link_libraries(MedievalRPG PRIVATE glm::glm)
+target_link_libraries(MedievalRPG PRIVATE unofficial::tinyexr::tinyexr)
 
 add_custom_command(TARGET MedievalRPG POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_directory
     ${CMAKE_SOURCE_DIR}/shaders
     $<TARGET_FILE_DIR:MedievalRPG>/shaders
+)
+
+add_custom_command(TARGET MedievalRPG POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+    ${CMAKE_SOURCE_DIR}/assets
+    $<TARGET_FILE_DIR:MedievalRPG>/assets
 )
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)

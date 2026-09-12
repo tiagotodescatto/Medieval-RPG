@@ -3,7 +3,8 @@
 > **A very simple medieval RPG inspired by *The Elder Scrolls IV: Oblivion* and *The Elder Scrolls V: Skyrim*, built from scratch with C++ and OpenGL.**
 
 ![C++](https://img.shields.io/badge/C%2B%2B-26-blue?style=for-the-badge\&logo=cplusplus)
-![OpenGL](https://img.shields.io/badge/OpenGL-4.6-lightgrey?style=for-the-badge\&logo=opengl)
+![OpenGL](https://img.shields.io/badge/OpenGL-4.6-
+grey?style=for-the-badge\&logo=opengl)
 ![GLFW](https://img.shields.io/badge/GLFW-Window%20%26%20Input-orange?style=for-the-badge)
 ![GLM](https://img.shields.io/badge/GLM-Math-green?style=for-the-badge)
 

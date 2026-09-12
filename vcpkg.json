@@ -5,7 +5,8 @@
     "glfw3",
     "fmt",
     "glad",
-    "glm"
+    "glm",
+    "tinyexr"
   ],
   "builtin-baseline": "04a9d8e5212d01ee1dd9478eadd9caade4f8b0d4"
 }
